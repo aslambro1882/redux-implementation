@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import ParentOne from "./container/ParentOne/ParentOne";
+import ParentTwo from "./container/ParentTwo/ParentTwo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+        <h1>Redux Implementation</h1>
+        <div style={{ display: 'flex', textAlign: 'center' }}>
+          <div style={{ border: '2px solid black', padding: '10px' }}>
+            <ParentOne />
+          </div>
+          <div style={{ border: '2px solid black', padding: '10px' }}>
+            <ParentTwo />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
