@@ -8,10 +8,10 @@ function countReducer(state = 0, action) {
             const newState = state + 1
             return newState;
         }
-        // case "DECREMENT": {
-        //     const newState = [...state, action.payload]
-        //     return newState;
-        // }
+        case "DECREMENT": {
+            const newState = state - 1
+            return newState;
+        }
 
         default:
             return state;
